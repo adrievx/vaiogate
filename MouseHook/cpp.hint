@@ -1,0 +1,2 @@
+#define MOUSEHOOK_API __declspec(dllexport)
+#define MOUSEHOOK_API __declspec(dllimport)
