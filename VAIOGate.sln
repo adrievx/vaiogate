@@ -5,6 +5,10 @@ VisualStudioVersion = 17.14.36310.24
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MouseHook", "MouseHook\MouseHook.vcxproj", "{6515814E-23FE-4198-91AF-EC5BB3FA9AF7}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TapTrigger", "TapTrigger\TapTrigger.vcxproj", "{98764834-B429-47E6-9C89-027416B06E99}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VGCommon", "VGCommon\VGCommon.vcxproj", "{2805F6F3-C1B8-47D8-836C-094B8DEA0807}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +25,22 @@ Global
 		{6515814E-23FE-4198-91AF-EC5BB3FA9AF7}.Release|x64.Build.0 = Release|x64
 		{6515814E-23FE-4198-91AF-EC5BB3FA9AF7}.Release|x86.ActiveCfg = Release|Win32
 		{6515814E-23FE-4198-91AF-EC5BB3FA9AF7}.Release|x86.Build.0 = Release|Win32
+		{98764834-B429-47E6-9C89-027416B06E99}.Debug|x64.ActiveCfg = Debug|x64
+		{98764834-B429-47E6-9C89-027416B06E99}.Debug|x64.Build.0 = Debug|x64
+		{98764834-B429-47E6-9C89-027416B06E99}.Debug|x86.ActiveCfg = Debug|Win32
+		{98764834-B429-47E6-9C89-027416B06E99}.Debug|x86.Build.0 = Debug|Win32
+		{98764834-B429-47E6-9C89-027416B06E99}.Release|x64.ActiveCfg = Release|x64
+		{98764834-B429-47E6-9C89-027416B06E99}.Release|x64.Build.0 = Release|x64
+		{98764834-B429-47E6-9C89-027416B06E99}.Release|x86.ActiveCfg = Release|Win32
+		{98764834-B429-47E6-9C89-027416B06E99}.Release|x86.Build.0 = Release|Win32
+		{2805F6F3-C1B8-47D8-836C-094B8DEA0807}.Debug|x64.ActiveCfg = Debug|x64
+		{2805F6F3-C1B8-47D8-836C-094B8DEA0807}.Debug|x64.Build.0 = Debug|x64
+		{2805F6F3-C1B8-47D8-836C-094B8DEA0807}.Debug|x86.ActiveCfg = Debug|Win32
+		{2805F6F3-C1B8-47D8-836C-094B8DEA0807}.Debug|x86.Build.0 = Debug|Win32
+		{2805F6F3-C1B8-47D8-836C-094B8DEA0807}.Release|x64.ActiveCfg = Release|x64
+		{2805F6F3-C1B8-47D8-836C-094B8DEA0807}.Release|x64.Build.0 = Release|x64
+		{2805F6F3-C1B8-47D8-836C-094B8DEA0807}.Release|x86.ActiveCfg = Release|Win32
+		{2805F6F3-C1B8-47D8-836C-094B8DEA0807}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
