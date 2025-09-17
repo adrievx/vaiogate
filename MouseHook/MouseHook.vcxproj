@@ -72,7 +72,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <TargetName>MouseHook</TargetName>
-    <OutDir>..\Build\x64.Debug</OutDir>
+    <OutDir>..\Build\dll\x64.Debug</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <TargetName>MouseHook</TargetName>
