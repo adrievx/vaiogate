@@ -10,13 +10,10 @@
 #define VGNET_API __declspec(dllimport)
 #endif
 
-// This class is exported from the dll
-class VGNET_API CVGNet {
-public:
-	CVGNet(void);
-	// TODO: add your methods here.
-};
+#include "framework.h"
+#include <cstdint>
 
-extern VGNET_API int nVGNet;
-
-VGNET_API int fnVGNet(void);
+VGNET_API void IsInternetReady();
+VGNET_API void CancelMission(int64_t missionId);
+VGNET_API void ContuineMission(); // should be ContinueMission but the exports are typoed in the original so its ContuineMission
+VGNET_API int HttpDownload(const wchar_t* url);

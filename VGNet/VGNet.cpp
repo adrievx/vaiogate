@@ -1,22 +1,18 @@
-// VGNet.cpp : Defines the exported functions for the DLL.
-//
-
-#include "pch.h"
-#include "framework.h"
 #include "VGNet.h"
+#include "NetworkSubsystem.h"
 
-
-// This is an example of an exported variable
-VGNET_API int nVGNet=0;
-
-// This is an example of an exported function.
-VGNET_API int fnVGNet(void)
-{
-    return 0;
+VGNET_API void IsInternetReady() {
+	NetworkSubsystem::Instance().IsInternetReady();
 }
 
-// This is the constructor of a class that has been exported.
-CVGNet::CVGNet()
-{
-    return;
+VGNET_API void CancelMission(int64_t missionId) {
+	NetworkSubsystem::Instance().CancelMission(missionId);
+}
+
+VGNET_API void ContuineMission() {
+	NetworkSubsystem::Instance().ContinueMission();
+}
+
+int HttpDownload(const wchar_t* url) {
+	return NetworkSubsystem::Instance().PerformHttpDownload(url) ? 1 : 0;
 }

@@ -151,13 +151,19 @@
     <None Include="cpp.hint" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CriticalSectionLock.h" />
+    <ClInclude Include="DownloadTask.h" />
     <ClInclude Include="framework.h" />
+    <ClInclude Include="Mission.h" />
+    <ClInclude Include="NetworkSubsystem.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="VGNet.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CriticalSectionLock.cpp" />
     <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="NetworkSubsystem.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
