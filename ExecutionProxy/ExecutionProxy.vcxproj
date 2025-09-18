@@ -126,12 +126,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Counter.h" />
+    <ClInclude Include="Environment.h" />
     <ClInclude Include="ExecutionProxy.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Counter.cpp" />
+    <ClCompile Include="Environment.cpp" />
     <ClCompile Include="ExecutionProxy.cpp" />
   </ItemGroup>
   <ItemGroup>
