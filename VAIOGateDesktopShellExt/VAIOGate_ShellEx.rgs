@@ -1,0 +1,37 @@
+HKCR
+{
+	VAIOGateDesktopShellExt.VAIOGateDeskt.1 = s 'VAIOGateDesktopShellEx Class'
+	{
+		CLSID = s '{70979C0B-409A-4BEB-8BC0-233569F636CA}'
+	}
+	VAIOGateDesktopShellExt.VAIOGateDesktop = s 'VAIOGateDesktopShellEx Class'
+	{
+		CLSID = s '{70979C0B-409A-4BEB-8BC0-233569F636CA}'
+		CurVer = s 'VAIOGateDesktopShellExt.VAIOGateDeskt.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {70979C0B-409A-4BEB-8BC0-233569F636CA} = s 'VAIOGateDesktopShellEx Class'
+		{
+			ProgID = s 'VAIOGateDesktopShellExt.VAIOGateDeskt.1'
+			VersionIndependentProgID = s 'VAIOGateDesktopShellExt.VAIOGateDesktop'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{236B1A62-A5BC-4761-A494-269B562878E9}'
+		}
+	}
+
+	NoRemove DesktopBackground
+	{
+		NoRemove shellex
+		{
+			NoRemove ContextMenuHandlers
+			{
+				ForceRemove LaunchVAIOGate = s '{70979C0B-409A-4BEB-8BC0-233569F636CA}'
+			}
+		}
+	}
+}

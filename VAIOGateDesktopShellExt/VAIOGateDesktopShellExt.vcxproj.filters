@@ -16,6 +16,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="cpp.hint" />
+    <None Include="VAIOGate_AppID.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="VAIOGate_ShellEx.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="VAIOGate.tlb" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -28,6 +35,30 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="RegistryUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Globals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLauncher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LauncherStructs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Context.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Guids.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource1.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -44,5 +75,22 @@
     <ClCompile Include="RegistryUtils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Globals.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLauncher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Guids.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VAIOGateDesktopShellExt.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

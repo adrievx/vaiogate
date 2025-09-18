@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		'%APPID%' = s 'VAIOGateDesktopShellExt'
+		'VAIOGateDesktopShellExt.DLL'
+		{
+			val AppID = s '%APPID%'
+		}
+	}
+}

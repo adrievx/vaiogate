@@ -149,15 +149,29 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <None Include="cpp.hint" />
+    <None Include="VAIOGate.tlb" />
+    <None Include="VAIOGate_AppID.rgs" />
+    <None Include="VAIOGate_ShellEx.rgs" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Context.h" />
+    <ClInclude Include="CoreLauncher.h" />
     <ClInclude Include="framework.h" />
+    <ClInclude Include="Globals.h" />
+    <ClInclude Include="Guids.h" />
+    <ClInclude Include="LauncherStructs.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="RegistryUtils.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="resource1.h" />
+    <ClInclude Include="ResourceManager.h" />
     <ClInclude Include="ShellExtension.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CoreLauncher.cpp" />
     <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="Globals.cpp" />
+    <ClCompile Include="Guids.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -165,7 +179,11 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="RegistryUtils.cpp" />
+    <ClCompile Include="ResourceManager.cpp" />
     <ClCompile Include="ShellExtension.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VAIOGateDesktopShellExt.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

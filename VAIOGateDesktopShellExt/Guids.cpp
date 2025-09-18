@@ -1,0 +1,5 @@
+#include <initguid.h>
+#include "Guids.h"
+
+// {70979C0B-409A-4BEB-8BC0-233569F636CA}
+DEFINE_GUID(CLSID_VAIOGateDesktopShellExt, 0x70979c0b, 0x409a, 0x4beb, 0x8b, 0xc0, 0x23, 0x35, 0x69, 0xf6, 0x36, 0xca);
