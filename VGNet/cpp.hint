@@ -1,0 +1,2 @@
+#define VGNET_API __declspec(dllexport)
+#define VGNET_API __declspec(dllimport)
